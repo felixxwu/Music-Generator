@@ -8,3 +8,5 @@ Features:
 * Graphical display to show the generated melody in a piano roll style.
 * Drums are set to have a slight swing, giving the generated clip a classic "House" feeling.
 * With the drums overlayed, the track will have "ducking" applied to it - a process in which the instruments' volume is quickly lowered and brought back up to make the kick drum stand out more.
+
+Full report can be found at: https://drive.google.com/open?id=1ECjKnD82WNakpYj1XggInrOqzpKJExvW
