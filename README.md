@@ -9,4 +9,4 @@ Features:
 * Drums are set to have a slight swing, giving the generated clip a classic "House" feeling.
 * With the drums overlayed, the track will have "ducking" applied to it - a process in which the instruments' volume is quickly lowered and brought back up to make the kick drum stand out more.
 
-Full report can be found at: https://drive.google.com/open?id=1ECjKnD82WNakpYj1XggInrOqzpKJExvW
+Full report can be found at: https://drive.google.com/open?id=0B30xqmiMfbvLV2E5a3hCSjlZSUk
