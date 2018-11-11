@@ -1,0 +1,132 @@
+using System;
+using System.IO;
+using System.Windows.Forms;
+
+
+namespace WAVToArray
+{
+
+    public partial class Form1 : Form
+    {
+
+
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            const int WavLength = 1000000;
+            byte[] data = File.ReadAllBytes(Application.StartupPath + "/DATA LIBRARY/heart07.wav");
+            int[] intdata = new int[WavLength];
+            byte[] outdata = new byte[WavLength];
+
+            SetWavLength(data, WavLength);
+            
+            ConvertToInt(data, intdata);
+
+            
+
+            ConvertFromInt(outdata, intdata);
+            for (int i = outdata.Length; i < WavLength; i++)
+            {
+                outdata[i] = 1;
+            }
+            //SwitchFormat(data);
+            //sample rate
+            //data[24] = 130;
+            //data[25] = 182;
+
+            //SwitchFormat(data);
+            
+            System.IO.File.WriteAllBytes(Application.StartupPath + "/DATA LIBRARY/NEW.wav", outdata);
+            //MessageBox.Show(Convert.ToString(intdata.Length));
+            this.Close();
+        }
+
+        private void SetWavLength(byte[] data, int Length)
+        {
+            string hexLength = Length.ToString("X");
+            if (hexLength.Length > 6)
+            {
+                MessageBox.Show("Length of wav file too long");
+            }
+            else
+            {
+                int fixedHexLength = hexLength.Length;
+                for (int i = 0; i < 8 - fixedHexLength; i++)
+                {
+                    hexLength = "0" + hexLength;
+                }
+            }
+            char[] hexLengthArray = hexLength.ToCharArray();
+            string memLoc7 = Convert.ToString(hexLengthArray[0]) + Convert.ToString(hexLengthArray[1]);
+            string memLoc6 = Convert.ToString(hexLengthArray[2]) + Convert.ToString(hexLengthArray[3]);
+            string memLoc5 = Convert.ToString(hexLengthArray[4]) + Convert.ToString(hexLengthArray[5]);
+            string memLoc4 = Convert.ToString(hexLengthArray[6]) + Convert.ToString(hexLengthArray[7]);
+            MessageBox.Show(memLoc4 + "-" + memLoc5 + "-" + memLoc6 + "-" + memLoc7);
+            data[4] = Convert.ToByte(Convert.ToInt32(memLoc4, 16));
+            data[5] = Convert.ToByte(Convert.ToInt32(memLoc5, 16));
+            data[6] = Convert.ToByte(Convert.ToInt32(memLoc6, 16));
+            data[7] = Convert.ToByte(Convert.ToInt32(memLoc7, 16));
+        }
+
+        private void ConvertToInt(byte[] data, int[] intdata)
+        {
+            for (int i = 0; i < data.Length; i++)
+            {
+                intdata[i] = data[i];
+            }
+            for (int i = 0; i < intdata.Length; i++)
+            {
+                if (intdata[i] > 127)
+                {
+                    intdata[i] = intdata[i] - 256;
+                }
+            }
+        }
+
+        private void ConvertFromInt(byte[] outdata, int[] intdata)
+        {
+            for (int i = 0; i < intdata.Length; i++)
+            {
+                if (intdata[i] < 0)
+                {
+                    intdata[i] = intdata[i] + 256;
+                }
+            }
+            for (int i = 0; i < outdata.Length; i++)
+            {
+                outdata[i] = Convert.ToByte(intdata[i]);
+            }
+        }
+
+        private void SwitchFormat(byte[] data)
+        {
+            for (int i = 45; i < data.Length; i++)
+            {
+                int sample = data[i];
+                if (sample + 128 < 256)
+                {
+                    data[i] = Convert.ToByte(data[i] + 128);
+                }
+                else
+                {
+                    data[i] = Convert.ToByte(data[i] - 128);
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            byte[] data = File.ReadAllBytes("C:/Users/Felix/Google Drive/Projects/DATA LIBRARY/kick.wav");
+            label1.Text = Convert.ToString(data[Convert.ToInt16(textBox1.Text)]);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+        }
+    }
+}

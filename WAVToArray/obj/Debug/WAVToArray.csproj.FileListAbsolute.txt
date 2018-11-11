@@ -1,0 +1,21 @@
+c:\users\felix\documents\visual studio 2015\Projects\WAVToArray\WAVToArray\bin\Debug\WAVToArray.exe.config
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\bin\Debug\WAVToArray.exe.config
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\bin\Debug\WAVToArray.exe
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\bin\Debug\WAVToArray.pdb
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\bin\Debug\NAudio.dll
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Debug\WAVToArray.csprojResolveAssemblyReference.cache
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Debug\WAVToArray.Form1.resources
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Debug\WAVToArray.Properties.Resources.resources
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Debug\WAVToArray.csproj.GenerateResource.Cache
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Debug\WAVToArray.exe
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Debug\WAVToArray.pdb
+D:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\bin\Debug\WAVToArray.exe.config
+D:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Debug\WAVToArray.exe
+D:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Debug\WAVToArray.pdb
+D:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\bin\Debug\WAVToArray.exe
+D:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\bin\Debug\WAVToArray.pdb
+D:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\bin\Debug\NAudio.dll
+D:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Debug\WAVToArray.csprojResolveAssemblyReference.cache
+D:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Debug\WAVToArray.Form1.resources
+D:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Debug\WAVToArray.Properties.Resources.resources
+D:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Debug\WAVToArray.csproj.GenerateResource.Cache

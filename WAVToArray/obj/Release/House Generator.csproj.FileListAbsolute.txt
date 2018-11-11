@@ -1,0 +1,8 @@
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\bin\Release\WAVToArray.exe.config
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\bin\Release\WAVToArray.exe
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\bin\Release\WAVToArray.pdb
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Release\WAVToArray.Form1.resources
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Release\WAVToArray.Properties.Resources.resources
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Release\House Generator.csproj.GenerateResource.Cache
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Release\WAVToArray.exe
+C:\Users\Felix\Google Drive\Projects\WAVToArray\WAVToArray\obj\Release\WAVToArray.pdb
